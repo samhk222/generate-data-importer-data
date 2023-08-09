@@ -24,7 +24,7 @@ class CsvController extends Controller
         // batch 03 - 5501 - 6500 - 3544d9da-6ab6-4a9c-9d49-bc6d0698887e - aconteceu rollback
         // batch 04 - 6501 - 7500 - ebec042d-c0ca-4e37-80dc-0a24ff1477f6
         // batch 05 - 7501 - 8500 - dd62f33d-a3c0-424c-84c2-74271ee90389
-        // batch 0 - 8501 - 9500 - c2aab7bd-0c30-4c17-87d7-47e043c4618f
+        // batch 06 - 8501 - 9500 - c2aab7bd-0c30-4c17-87d7-47e043c4618f
 
         /*
          *
@@ -53,8 +53,15 @@ class CsvController extends Controller
 
         // Criar tags
 
-        $start = 8501;
-        $end = 9500;
+        // Por conta do refresh do ambiente, precisei deixar rodando de novo
+        // batch 01 - 0001 - 1000 - 764eee07-2033-4760-b91d-f2b8d00e034c
+        // batch 02 - 1001 - 2000 - 7c841144-a4ef-4fc1-ae24-98c9c0409a44
+        // batch 03 - 2001 - 3000 - 1196a1bc-8435-40ce-98d4-398879747a5a
+        // batch 04 - 3001 - 4000 -
+        // batch 05 - 4001 - 5000 -
+
+        $start = 2001;
+        $end = 3000;
         $files_to_generate = [
             new Employees($start, $end),
             new Resources($start, $end),
