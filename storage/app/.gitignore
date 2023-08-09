@@ -1,3 +1,4 @@
 *
 !public/
+!base_csvs/
 !.gitignore
